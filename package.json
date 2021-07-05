@@ -1,0 +1,32 @@
+{
+  "name": "http-serve",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "lib/bin.js",
+  "main": "lib/http-serve.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.prod.json && tsc-alias -p tsconfig.prod.json",
+    "start": "node -r tsconfig-paths/register -r ts-node/register src/cli.ts",
+    "test": "jest --all"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.28",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^9.1.1",
+    "tsc-alias": "^1.2.5",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.5",
+    "typescript-transform-paths": "^2.2.3"
+  },
+  "dependencies": {
+    "commander": "^7.1.0",
+    "ecstatic": "^4.1.4"
+  }
+}
